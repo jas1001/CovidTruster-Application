@@ -1,0 +1,384 @@
+
+ * {
+  overflow-x: hidden;
+  padding: 0px !important;
+}
+
+@media (max-width: 769px) {
+  .top-navbar {
+    display: none;
+  }
+
+  .heading2 {
+    display: none;
+  }
+
+  .button-box {
+    display: none;
+  }
+
+  #image-desk {
+    display: none;
+  }
+
+  .text-container {
+    display: none;
+  }
+
+  .container-phone {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .heading {
+    width: 100%;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 54px;
+    opacity: 1;
+    text-align: center;
+    margin: auto;
+  }
+
+.box-signup {
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 510px;
+  position: fixed;
+  text-align: center;
+}
+.button1 {
+  width: 200px;
+  height: 50px;
+  background: rgba(252,130,143,1);
+  opacity: 1;
+  position: relative;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 22px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+  
+.button1:hover {
+  background: rgb(236, 91, 106);
+  transition: 0.3s;
+}
+
+.box-login {
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 568px;
+  position: fixed;
+  text-align: center;
+}
+  
+.button2 {
+  width: 200px;
+  height: 50px;
+  background: rgba(252,130,143,1);
+  opacity: 1;
+  position: relative;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 22px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+  
+.button2:hover {
+  background: rgb(236, 91, 106);
+  transition: 0.3s;
+}
+  .img-container-phone {
+    width: 257px;
+    height: 211px;
+    opacity: 1;
+    position: relative;
+    top: 112px;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+  }
+  .image-phone {
+    width: 257px;
+    height: 206px;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .text-verify {
+    width: 265px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 130px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+    margin: auto;
+  }
+  .text-explain {
+    width: 280px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 140px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .heading {
+    display: none;
+  }
+
+  .image-phone {
+    display: none;
+  }
+
+  .button-start_1 {
+    display: none;
+  }
+
+  .text-verify {
+    display: none;
+  }
+
+  .text-explain {
+    display: none;
+  }
+
+  .container-desk {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: fixed;
+    overflow: hidden;
+  }
+  .top-navbar {
+    width: 100%;
+    height: 64px;
+    background: white;
+    box-shadow: 0px 1px 8px grey;
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+  }
+  .heading2 {
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    opacity: 1;
+    text-align: left;
+  }
+  .report {
+    width: 255px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 25px;
+    right: 250px;
+    font-family: 'Work Sans';
+    font-weight: 'Regular';
+    font-size: 16px;
+    opacity: 0.3;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .rewards {
+    width: 255px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 25px;
+    right: 125px;
+    font-family: 'Work Sans';
+    font-weight: 'Regular';
+    font-size: 16px;
+    opacity: 0.3;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .settings {
+    width: 255px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    font-family: 'Work Sans';
+    font-weight: 'Regular';
+    font-size: 16px;
+    opacity: 0.3;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .box-button {
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 635px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .button-signup {
+    width: 275px;
+    height: 72px;
+    background:rgba(252,130,143,1);
+    opacity: 1;
+    position: relative;
+    left: -5px;
+    color: rgba(255,255,255,1);
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 32px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .button-signup:hover {
+    background: rgb(236, 91, 106);
+    transition: 0.3s;
+  }
+  
+  .button-login {
+    width: 275px;
+    height: 72px;
+    background: rgba(252,130,143,1);
+    opacity: 1;
+    left: 5px;
+    position: relative;
+    color: rgba(255,255,255,1);
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 32px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .button-login:hover {
+    background: rgb(236, 91, 106);
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+  .img-container-desk {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    position: relative;
+    top: -250px;
+    text-align: right;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  #image-desk {
+    width: 60%;
+    object-fit: contain;
+  }
+  
+ 
+  .text-container {
+    width: 50%;
+    height: auto;
+    right: 0px;
+    text-align: left;
+    margin-left: 50px;
+  }
+  
+  .subhead-text {
+    width: 45%;
+    height: auto;
+    color: rgba(12, 10, 64);
+    position: absolute;
+    top: 170px;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 10px;
+    opacity: 1;
+    text-align: left;
+  }
+
+ 
+  .main-text {
+    width: 50%;
+    height: auto;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 365px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+  }
+
+
+  @media (max-width: 1024px) {
+    .main-text {
+      font-size: 24px;
+      top: 385px;
+      width: 65%
+    }
+
+    .subhead-text {
+      font-size: 43px;
+    }
+
+    .subhead-text-criteria {
+      font-size: 60px;
+
+  }
+
+  }}

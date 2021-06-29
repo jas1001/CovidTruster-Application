@@ -1,0 +1,519 @@
+* {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .top-navbar {
+    display: none;
+  }
+
+  .heading2 {
+    display: none;
+  }
+  .heading {
+    width: 100%;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    opacity: 1;
+    text-align: center;
+    margin: auto;
+  }
+
+  .report {
+    display: none;
+  }
+
+  .rewards {
+    display: none;
+  }
+
+  .settings {
+    display: none;
+  }
+
+  .button-signup {
+    display: none;
+  }
+
+  .button-login {
+    display: none;
+  }
+
+  #image-desk {
+    display: none;
+  }
+}
+
+.container-phone {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: fixed;
+  overflow: hidden;
+}
+.heading1 {
+  width: 100%;
+  background-color: white;
+  height: 68px;
+  position: fixed;
+  box-shadow: 0px 1px 8px grey;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  text-align: center;
+}
+
+.img-container-phone {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  position: relative;
+  top: 120px;
+  text-align: center;
+  overflow: hidden;
+  z-index: -1;
+}
+.image-phone {
+  max-width: 100%;
+  object-fit: contain;
+}
+.form-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  top: 20px; 
+  left: 0px;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+.text-welcome {
+  width: 100%;
+  margin: 90px 5px 10px 0px;
+  color: rgba(12, 10, 64);
+  font-family: 'Work Sans';
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtext-welcome {
+  width: 100%;
+  margin: 0px 5px 10px 0px;
+  color: rgba(12, 10, 64);
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.first-name {
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#fname1 {
+  width: 160px;
+  height: 50px;
+  background-color: white;
+  padding: 2px 20px 2px;
+  opacity: 1;
+  margin: 20px 10px 20px 0px;
+  box-sizing: border-box;
+  border: 2px solid rgb(180, 180, 180);
+  position: relative;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#lname1 {
+  width: 160px;
+  height: 50px;
+  padding: 2px 20px 2px;
+  background-color: white;
+  opacity: 1;
+  margin: 20px 0px 20px 0px;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Asap';
+  border: 2px solid rgb(180, 180, 180);
+  font-size: 15px;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#email1 {
+  width: 330px;
+  height: 50px;
+  padding: 2px 20px 2px;
+  background-color: white;
+  margin: 2px 0px 20px 0px;
+  opacity: 1;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Asap';
+  font-size: 15px;
+  outline: none;
+  border: 2px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#pword1 {
+  width: 330px;
+  height: 50px;
+  padding: 2px 20px 2px;
+  background-color: white;
+  opacity: 1;
+  margin: 2px 0px 20px 0px;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Asap';
+  font-size: 15px;
+  outline: none;
+  border: 2px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.button-box1 {
+  display: flex;
+  width: 100%;
+  bottom: 5%;
+  left: -10px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit1 {
+  width: 250px;
+  height: 52px;
+  background: rgba(252,130,143,1);
+  position: relative;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+}
+
+.submit1:hover {
+  background: rgb(236, 91, 106);
+  transition: 0.3s;
+}
+
+.button2-box1 {
+  width: 100%;
+  bottom: 13%;
+  position: fixed;
+  text-align: center;
+}
+
+#login-text1 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.login1 {
+  height: 30px;
+  width: 80px;
+  margin-top: 24px;
+  background: transparent;
+  position: relative;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(252,130,143,1);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+}
+
+
+@media (min-width: 769px) {
+  .heading1 {
+    display: none;
+  }
+
+  .image-phone {
+    display: none;
+  }
+
+  .button-box1 {
+    display: none;
+  }
+
+  .submit1 {
+    display: none;
+  }
+
+  .container-desk {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .top-navbar {
+    width: 100%;
+    height: 64px;
+    background: white;
+    box-shadow: 0px 1px 8px grey;
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .heading2 {
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    opacity: 1;
+    text-align: left;
+    z-index: 2;
+  }
+  .report {
+    width: 255px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 25px;
+    right: 250px;
+    font-family: 'Work Sans';
+    font-weight: 'Regular';
+    font-size: 16px;
+    opacity: 0.3;
+    text-align: center;
+    z-index: 2;
+  }
+  .rewards {
+    width: 255px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 25px;
+    right: 125px;
+    font-family: 'Work Sans';
+    font-weight: 'Regular';
+    font-size: 16px;
+    opacity: 0.3;
+    text-align: center;
+    z-index: 2;
+  }
+  .settings {
+    width: 255px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    font-family: 'Work Sans';
+    font-weight: 'Regular';
+    font-size: 16px;
+    opacity: 0.3;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .form-box2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    top: 60px; 
+    left: 0px;
+    overflow: hidden;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  .text-welcome {
+    width: 100%;
+    margin: 90px 5px 10px 50px;
+    color: rgba(12, 10, 64);
+    font-family: 'Work Sans';
+    font-size: 52px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .subtext-welcome {
+    width: 100%;
+    margin: 0px 5px 10px 60px;
+    color: rgba(12, 10, 64);
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  .first-name2 {
+    display: flex;
+    width: 100%;
+  }
+
+  #fname2 {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    padding: 2px 20px 2px;
+    opacity: 1;
+    margin: 40px 10px 20px 60px;
+    box-sizing: border-box;
+    border: 2px solid rgb(180, 180, 180);
+    position: relative;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #lname2 {
+    width: 300px;
+    height: 50px;
+    padding: 2px 20px 2px;
+    background-color: white;
+    opacity: 1;
+    margin: 40px 0px 20px 0px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Asap';
+    border: 2px solid rgb(180, 180, 180);
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #email2 {
+    width: 610px;
+    height: 50px;
+    padding: 2px 20px 2px;
+    background-color: white;
+    margin: 2px 0px 20px 60px;
+    opacity: 1;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Asap';
+    font-size: 15px;
+    outline: none;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #pword2 {
+    width: 610px;
+    height: 50px;
+    padding: 2px 20px 2px;
+    background-color: white;
+    opacity: 1;
+    margin: 2px 0px 20px 60px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Asap';
+    font-size: 15px;
+    outline: none;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .button-box2 {
+    display: flex;
+    bottom: 10%;
+    left: 50px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .submit2 {
+    width: 510px;
+    height: 62px;
+    background: rgba(252,130,143,1);
+    position: relative;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+  }
+  
+  .submit2:hover {
+    background: rgb(236, 91, 106);
+    transition: 0.3s;
+  }
+
+  #login-text {
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .login2 {
+    height: 40px;
+    width: 150px;
+    margin-top: 22px;
+    left: 535px;
+    background: transparent;
+    position: absolute;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(252,130,143,1);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 2;
+  }
+  
+  .img-container-desk {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    top: -250px;
+    position: relative;
+    text-align: right;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  #image-desk {
+    width: 70%;
+    object-fit: contain;
+  }
+
+}
+

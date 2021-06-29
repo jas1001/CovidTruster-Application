@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="./Signup-Final.css" rel="stylesheet" />
+        <title>COVIDTRUSTER - Signup</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+        <div class="container-phone">
+            <!-- <div class="heading1">
+                <img src="covid logo2.png" id="header-img" alt="COVIDTRUSTER" height=64px width=300px>
+            </div> -->
+
+            <div class="heading">
+                <img src="LogoTr.png" alt="COVIDTRUSTER" width=300px>
+            </div>
+            <div class="img-container-phone">
+                <div class="image-phone"><img src="CV-logo.png" width=531px height=426px alt="logo"></div>
+            </div>
+            
+            <div class="form-box"> 
+                <div class="text-welcome">Welcome to CovidTruster!</div>
+                <div class="subtext-welcome">Enter your details below to register:</div>
+                
+                
+                <form name="form-reporting" id="form" action='reporting.html' method="GET" onSumbit="return validate_form ();">
+                <div class="first-name">
+                    <input type="text" id="fname1" placeholder="First Name" name="fname" required>
+                   <input type="text" id="lname1" placeholder="Last Name" name="lname" required>
+                </div>
+                <div class="email-address1">
+                    <input type="email" id="email1" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="password1">
+                    <input type="password" id="pword1" placeholder="Password" name="pword" required>
+                </div>
+                <div class="password1-confirm1">
+                    <input type="password" id="pword1" placeholder="Confirm Password" name="pword" required>
+                </div>
+            </div>
+            <div class="button-box1">
+                <input type="submit" class="submit1" value="Sign up" onClick="return validateForm()">
+            </div>
+            </form>
+
+
+            <div class="button2-box1">
+                <span id="login-text1">Already have an account?</span>
+                <!-- <button type="button" class="login1">Log in</button> -->
+                <!-- <a href="Login-Final.html"><button type="button" class="login1">Log in</button></a> -->
+                <a href="Login-Final.html"><button type="button" class="login1">Log in</button></a>
+            </div>
+        </div>
+        <div class="container-desk">
+            <div class="top-navbar">
+                <div class="heading2">
+                    <img src="covid logo.png" alt="COVIDTRUSTER" height=64px width=355px>
+                </div>
+                <span class="report">REPORTING</span>
+                <span class="rewards">REWARDS</span>
+                <span class="settings">SETTINGS</span>
+            </div>
+            <div class="form-box2"> 
+                <div class="text-welcome">Welcome to CovidTruster!</div>
+                <div class="subtext-welcome">Enter your details below to register:</div>
+                
+                <form name="form-reporting1" id="form" action='reporting.html' method="GET" onSumbit="return validate_form ();">
+                <div class="first-name2">
+                    <input type="text" id="fname2" placeholder="First Name" name="fname" required>
+                    <input type="text" id="lname2" placeholder="Last Name" name="lname" required>
+                </div>
+                <div class="email-address2">
+                    <input type="email" id="email2" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="password2">
+                    <input type="password" id="pword2" placeholder="Password" name="pword" required>
+                </div>
+                <div class="password2-confirm2">
+                    <form><input type="password" id="pword2" placeholder="Confirm Password" name="pword" required>
+                </div>
+            </div>
+            <div class="button-box2">
+                <input type="submit" class="submit2" value="Sign up" onClick="return validateForm1()">
+            </form>
+
+
+                <span id="login-text">Already have an account?</span>
+                <!-- <button type="button" class="login2">Log in</button> -->
+                
+                <a href="Login-Final.html"><button type="button" class="login2">Log in</button></a>
+            </div>
+
+            <div class="img-container-desk">
+                <img src="CV-logo.png" id="image-desk" width=1274.4px height=1022.4px alt="logo">
+            </div>
+        </div>
+    </body> 
+    
+    <script>
+
+function validateForm(){
+        var validation = false;
+        var firstname = document.forms["form-reporting"]["fname1"].value;
+        var lastname = document.forms["form-reporting"]["lname1"].value;
+        var email = document.forms["form-reporting"]["email1"].value;
+        var password1 = document.forms["form-reporting"]["pword1"].value;
+
+        if(firstname == "" && lastname == "" && email =="" && password1 =="" ) {
+            alert("Please enter your sign up details");
+            return false;
+        }
+    }
+
+    function validateForm1(){
+        var validation = false;
+        var firstname1 = document.forms["form-reporting1"]["fname2"].value;
+        var lastname1 = document.forms["form-reporting1"]["lname2"].value;
+        var email1 = document.forms["form-reporting1"]["email2"].value;
+        var password11 = document.forms["form-reporting1"]["pword2"].value;
+
+        if(firstname1 == "" && lastname1 == "" && email1 =="" && password11 =="" ) {
+            alert("Please enter your sign up details");
+            return false;
+        }}
+
+    </script>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="./reporting.css" rel="stylesheet" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <title>COVIDTRUSTER - Report</title>
+    
+    </head>
+    
+    <body>
+        
+        <div class="reporting-screen">
+        
+        <div class="box-nav"></div>
+        <!--  DESKTOP NAVIGATION BAR   -->
+        <div class="top-nav-bar"></div>
+        <div class="phone-heading">
+            <img src="covid logo2.png" id="logo" alt="COVIDTRUSTER" width=300px>
+        </div>
+        <div class="heading">
+            <a href="reporting.html"><img src="covid logo.png" id="header-img" alt="COVIDTRUSTER" height=64px width=355px></a>
+        </div>
+        <a href='reporting.html'><button class="text-reporting">REPORTING</button></a>
+        <a href='reward1.html'><button class="text-rewards">REWARDS</button></a>
+        <a href='settings.html'><button class="text-settings">SETTINGS</button></a>
+        <!--  ---------------------------------------------------------   -->
+
+        <span class="text-enter-the-link">Enter the link</span>
+        <span class="text-explain-link">Submit the link to a news article, news headline or social media page and we will evaluate the credibility of the source</span>
+       
+        <form name="form-reporting" id="form" action='analysing2.html' method="GET" onSumbit="return validate_form ();">
+        <label class="box-enter-the-link"><input type="url" id="urlupload" name="urlupload" placeholder="Paste URL/Website Link"/></label>
+        <label class="box-upload-picture"><input type="file" id="fileupload" name="fileupload" accept=".jpg,.jpeg,.png" onchange="validateFileType()"/>Upload Picture </label>
+        <div id="file-upload-filename"></div>
+        <div class="box-button">
+            <input type="submit" class="button-report" value='REPORT' onClick="return validateForm()"/>
+        </div>
+        </form>
+
+        <span class="text-upload-picture">Upload an image</span>
+        <span class="text-upload-explain">Upload a picture or screenshot of a newspaper or social media post</span>
+
+
+        <!--  ---------------------------------------------------------   -->
+        <a href='reporting.html'><div class="reporting-icon">
+            <img src="nav-reporting.png" alt="reporting-icon" width="100%">
+        </div></a>
+
+        <a href='reward1.html'><div class="rewards-icon">
+            <img src="nav-rewards.png" alt="rewards-icon" width="100%">
+        </div></a>
+
+        <a href='settings.html'><div class="settings-icon">
+            <img src="nav-settings.png" alt="settings-icon" width="100%">
+        </div></a>
+
+        <span class="text-reporting2">Reporting</span>
+        <span class="text-rewards2">Rewards</span>
+        <span class="text-settings2">Settings</span>
+
+        <div class="background-image">
+            <img src="CV-logo.png" id="image-desk" width=1274.4px height=1022.4px>
+        </div>
+    </div>
+    </body>
+
+<script>
+    function validateForm(){
+        var validation = false;
+        var urlupload = document.forms["form-reporting"]["urlupload"].value;
+        var fileupload = document.forms["form-reporting"]["fileupload"].value;
+        if(urlupload == "" && fileupload == "") {
+            alert("Please enter a URL or upload an image");
+            return false;
+        }
+        if(urlupload != "" && fileupload != "") {
+            alert("Only one field can be submitted");
+            return false;
+        }
+        
+        localStorage.clear();
+       //The follow 2 lines of code allows you to pass data from one html page to another page
+       var myContentURL = document.getElementById("urlupload").value;
+       localStorage.setItem("myContentURL", myContentURL);
+     
+       //The follow 2 lines of code allows you to pass data from one html page to another page
+       var myContentIMAGE = document.getElementById("fileupload").value;
+       localStorage.setItem("myContentIMAGE", myContentIMAGE);   
+    }
+
+    function validateFileType( event ) {
+        var input = document.getElementById( 'fileupload' );
+        var infoArea = document.getElementById( 'file-upload-filename' );
+        // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+        var fileName = input.files[0].name;
+        // use fileName however fits your app best, i.e. add it into a div
+        infoArea.textContent = 'Selected File: ' + fileName;
+    }
+
+    
+    </script>
+
+</html>

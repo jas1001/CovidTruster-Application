@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="./rewards3.css" rel="stylesheet" />
+        <title>Rewards Information</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+
+        <div class="container-desk">
+            <div class="top-navbar">
+                <div class="heading2">
+                    <a href="reporting.html"><img src="covid logo.png" alt="COVIDTRUSTER" height=64px width=355px></a>
+                </div>
+
+                <a href="reporting.html"><button class="report">REPORTING</button></a>
+                <a href="reward1.html"> <button class="rewards">REWARDS</button></a> 
+                 <a href="settings.html"> <button class="settings">SETTINGS</button></a>
+            </div>
+      
+                <button type="button" class="points">10
+                    <span class="you-text">Spend</span>
+                    <span class="points-text">points</span>
+                </button>
+                
+                
+                
+                <form name="form-reporting" id="form" action='rewards4.html' method="GET" onSumbit="return validate_form ();">
+                    <input type="text" id="Address" name="Address" placeholder="Address" required>
+                    <input type="text" id="Address2" name="Address2"placeholder="Address2">
+                    <input type="text" id="city" name="city" placeholder="Suburb/City" required>
+                    <input type="text" id="postcode" name="postcode" placeholder="Postcode" pattern="[0-9]{4}" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+
+                    <select id="state" name="state" placeholder="State" required>
+                        <option value="0">Select State</option>
+                        <option value="NSW">NSW</option>
+                        <option value="TAS">TAS</option>
+                        <option value="VIC">VIC</option>
+                        <option value="NT">NT</option>
+                        <option value="ACT">ACT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                    </select>
+                    <input type="submit" class="button-signup" value='Confirm Order' onClick="return validateForm()">
+                </form>
+                    <!-- <button type="button" class="button-signup" onClick="return validateForm()">Confirm Order</button> -->
+                  
+
+                  <div class="crown">
+                    <img src="crown.png" alt="crown" width=100px>
+                </div>
+
+            <div class="background-image" >
+                <img src="CV-logo.png" alt="background-image" width="100%" style="background-image: url('background.png');">
+            </div>
+
+                <!-- <span class="subhead-text">My Rewards</span> -->
+                <span class="main-text">Please enter your shipping details and we will send your item as soon as possible</span>
+
+        </div>
+        <div class="container-phone">
+
+            <div class="heading">
+                <img src="LogoTr.png" alt="COVIDTRUSTER" width=300px>
+            </div>
+
+            
+
+            <span class="main-text1">Please enter your shipping details and we will send your item as soon as possible</span>
+
+            <button type="button" class="points1">10
+                <span class="you-text1">Spend</span>
+                <span class="points-text1">points</span>
+            </button>
+            <div class="crown1">
+                <img src="crown.png" alt="crown" width=50px>
+            </div>
+
+            <div class="arrow">
+              <a href="rewards2.html"><img src="arrow.png" alt="arrow" width=30px></a>
+            </div>
+
+            <form name="form-reporting1" id="form" action='rewards4.html' method="GET" onSumbit="return validate_form ();">
+                <input type="text" id="fname1" name="Address" placeholder="Address" required>
+                <input type="text" id="lname1" name="Address2"placeholder="Address2">
+                <input type="text" id="city1" name="city" placeholder="Suburb/City" required>
+                <input type="text" id="postcode1" name="postcode" placeholder="Postcode" pattern="[0-9]{4}" required>
+                <input type="tel" id="phone1" name="phone" placeholder="Phone Number" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+
+                <select id="state1" name="state" placeholder="State">
+                    <option value="0">State</option>
+                    <option value="NSW">NSW</option>
+                    <option value="TAS">TAS</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NT">NT</option>
+                    <option value="ACT">ACT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                </select>
+                <!-- <a href="rewards4.html"><button" class="points12" onClick="return validateForm()">Confirm Order</button></a> -->
+                <input type="submit" class="points12" value='Confirm Order' onClick="return validateForm1()">
+
+              </form>
+
+            <div class="box-nav">
+                <a href='reporting.html'><div class="reporting-icon">
+                  <img src="uploadgrey.png" alt="reporting-icon" width="100%">
+                </div></a>
+                <a href="reward1.html"><div class="rewards-icon">
+                    <img src="coin.png" id="rewards-icon" width="100%">
+                </div></a>
+                <a href="settings.html"><div class="settings-icon">
+                  <img src="nav-settings.png" alt="settings-icon" width="100%">
+                </div></a>
+            </div>
+    
+            <span class="text-reporting2">Reporting</span>
+            <span class="text-rewards2">Rewards</span>
+            <span class="text-settings2">Settings</span>
+
+            <div class="background-image1">
+                <img src="CV-logo.png" id="image-desk" width=1274.4px height=1022.4px>
+            </div>
+            
+        </div>
+    </body> 
+    <script>
+
+function validateForm(){
+        var validation = false;
+        var address = document.forms["form-reporting"]["Address"].value;
+        var city = document.forms["form-reporting"]["city"].value;
+        var postcode = document.forms["form-reporting"]["postcode"].value;
+        var phone = document.forms["form-reporting"]["phone"].value;
+        var state = document.forms["form-reporting"]["state"].value;
+            if (address =="" && city =="" && postcode =="" && phone =="") {
+            alert("Please enter your shipping details");
+            return false;
+            }}
+
+function validateForm1(){
+        var validation = false;
+        var address1 = document.forms["form-reporting1"]["fname1"].value;
+        var city1 = document.forms["form-reporting1"]["city1"].value;
+        var postcode1 = document.forms["form-reporting1"]["postcode1"].value;
+        var phone1 = document.forms["form-reporting1"]["phone1"].value;
+        var state1 = document.forms["form-reporting1"]["state1"].value;
+            if (address1 =="" && city1 =="" && postcode1 =="" && phone1 =="") {
+            alert("Please enter your shipping details");
+            return false;
+            }}
+
+    </script>    
+</html>

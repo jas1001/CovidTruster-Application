@@ -1,0 +1,634 @@
+* {
+  overflow-x: hidden;
+}
+.sharing-screen {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+/* ----------------------------------------------------*/
+
+
+
+
+
+/* ----------------------------------------------------*/
+
+/* DESKTOP NAVIGATION BAR */
+
+.top-nav-bar {
+  width: 100%;
+  height: 64px;
+  background: white;
+  box-shadow: 0px 1px 8px grey;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.heading {
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  opacity: 1;
+  text-align: left;
+  z-index: 2;
+}
+.text-reporting {
+  width: 100px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 25px;
+  right: 350px;
+  font-family: 'Work Sans';
+  text-decoration: underline;
+  font-weight: 'Regular';
+  font-size: 16px;
+  opacity: 1;
+  text-align: center;
+  cursor: pointer;
+  border:none;
+  outline: none;
+  background: transparent;
+  z-index: 2;
+}
+
+
+.text-rewards {
+  width: 100px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 25px;
+  right: 225px;
+  font-family: 'Work Sans';
+  font-weight: 'Regular';
+  font-size: 16px;
+  opacity: 0.5;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 2;
+}
+
+.text-rewards:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.text-settings {
+  width: 100px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  font-family: 'Work Sans';
+  font-weight: 'Regular';
+  font-size: 16px;
+  opacity: 0.5;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  z-index: 2;
+}
+
+.text-settings:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+
+#urlupload {
+  font-size: 20px;
+  font-family: 'Asap';
+  position: relative;
+  top: 20px;
+  z-index: 2;
+  width: 300px;
+}
+
+#fileupload {
+  font-size: 20px;
+  font-family: 'Asap';
+  position: relative;
+  top: 20px;
+  z-index: 2;
+  width: 300px;
+}
+
+
+.text-share-this {
+  width: 100%;
+  color: rgba(12, 10, 64);
+  position: absolute;
+  top: 110px;
+  font-family: 'Work Sans';
+  font-weight: 600;
+  font-size: 42px;
+  opacity: 1;
+  text-align: center;
+}
+
+.text-click {
+  width: 100%;
+  color: rgba(0,0,0,1);
+  position: relative;
+  top: 190px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 27px;
+  opacity: 1;
+  text-align: center;
+  z-index: 2;
+}
+.text-or {
+  width: 100%;
+  color: rgba(0,0,0,1);
+  position: relative;
+  font-family: 'Open Sans';
+  top: 320px;
+  font-weight: 300;
+  font-size: 27px;
+  opacity: 1;
+  text-align: center;
+  z-index: 1;
+}
+
+.center-box {
+  width: 100%;
+  height: 106%;
+  position: relative;
+  background: transparent;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  overflow-x: hidden;
+  text-align: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.box1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(242,251,250,1);
+  top: 180px;
+  opacity: 1;
+  position: relative;
+  border: 1px solid rgba(173,229,226,1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: auto;
+  z-index: 1;
+}
+
+#image-star {
+  position: absolute;
+  width: 200px;
+  top: 300px;
+  right: 20px;
+  z-index: 1;
+}
+
+.box-logo {
+  width: 255px;
+  color: rgba(0,0,0,1);
+  font-family: 'Asap';
+  position: absolute;
+  top: 475px;
+  left: 48.4%;
+  font-size: 18px;
+  opacity: 1;
+  text-align: center;
+  z-index: 2;
+}
+
+.social-media {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  top: -30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook {
+  position: relative;
+  width: 70px;
+  padding-right: 10px;
+  z-index: 1;
+}
+.whatsapp {
+  position: relative;
+  width: 70px;
+  padding-right: 10px;
+  z-index: 1;
+}
+.instagram {
+  position: relative;
+  width: 70px;
+  padding-right: 10px;
+  z-index: 1;
+}
+.twitter {
+  position: relative;
+  width: 70px;
+  padding-right: 10px;
+  z-index: 1;
+}
+.google {
+  position: relative;
+  width: 70px;
+  z-index: 1;
+}
+
+.button-box {
+  top: 350px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.button-back {
+  width: 312px;
+  height: 72px;
+  background: rgba(252,130,143,1);
+  opacity: 1;
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color: white;
+  cursor: pointer; 
+  z-index: 1;
+}
+
+.button-back:hover {
+  background: rgb(236, 91, 106);
+  transition: 0.3s;
+}
+
+.background-image {
+  opacity: 0.3;
+  position: fixed;
+  top: 420px;
+  width: 100%;
+  z-index: -1;
+}
+
+.phonebackground-image {
+  opacity: 0.3;
+  position: fixed;
+  top: 480px;
+  width: 100%;
+  margin: 0px;
+  z-index: -1;
+} 
+
+
+/* PHONE NAVIGATION BAR */
+.box-nav {
+  width: 100%;
+  height: 70px;
+  background:white;
+  box-shadow: 0px 1px 8px grey;
+  position: fixed;
+  bottom: 0px;
+  left: 0px; 
+  right: 0px;
+  margin: 0px;
+  z-index: 2;
+  }
+
+ 
+.text-reporting2 {
+  font-family: 'Work Sans';
+  font-weight: bold;
+  font-size: 11px;
+  color:rgba(252,130,143,1);
+  position: fixed;
+  bottom: 10px;
+  left: 14%;
+  z-index: 2;
+}
+
+.text-rewards2 {
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 11px;
+  color:  grey;
+  position: fixed;
+  bottom: 10px;
+  left: 43.8%;
+  z-index: 2;
+}
+
+.text-settings2 {
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 11px;
+  color: grey;
+  position: fixed;
+  bottom: 10px;
+  right: 16%;
+  z-index: 2;
+}
+
+.reporting-icon {
+  position: fixed;
+  bottom: 25px;
+  left: 16.5%;
+  width: 30px;
+  z-index: 2;
+}
+
+.rewards-icon {
+  position: fixed;
+  bottom: 24px;
+  left: 45%;
+  width: 35px;
+  z-index: 2;
+
+}
+
+.settings-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 17.2%;
+  width: 35px;
+  z-index: 2;
+
+}
+
+  
+.phone-heading {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: white;
+  text-align: center;
+  margin: 0px;
+  z-index: 2;
+}
+
+#logo {
+    width: 355px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 20px;
+    opacity: 1;
+  }
+
+.logo {
+  font-family: 'Asap';
+  font-weight: Bold;
+  font-size: 30px;
+  color: black;
+  position: relative;
+  top: 648px;
+  left: 288px;
+  z-index: 1;
+}
+
+@media (min-width: 769px) {
+
+.phonebackground-image {
+  display: none;
+}
+
+.phone-heading {
+  display: none;
+}
+
+.box-nav {
+  display: none;
+}
+
+.reporting-icon {
+display: none;
+}
+
+.rewards-icon {
+display: none;
+}
+
+.settings-icon {
+display: none;
+}
+
+.text-reporting2 {
+display: none;
+}
+
+.text-rewards2 {
+display: none;
+}
+.text-settings2 {
+display: none;
+}
+.logo {
+  display: none;
+}
+}
+
+
+@media (max-width: 769px) {
+  .text-reporting {
+    display: none;
+  }
+
+  .text-rewards {
+    display: none;
+  }
+
+  .text-settings {
+    display: none;
+  }
+
+  .sharing-screen {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+  .heading {
+    display: none;
+}
+
+  .top-nav-bar {
+    display: none;
+  }
+
+  .background-image {
+    display: none;
+    }
+
+  .text-share-this {
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    top: 115px;
+  }
+
+  #image-star {
+    position: relative;
+    top: 150px;
+    right: 0px;
+    width: 120px;
+    z-index: 2;
+  }
+
+  .text-click {
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    top: 175px;
+    z-index: 2;
+  }
+  .box1 {
+    width: 200px;
+    height: 200px;
+    background: rgba(242,251,250,1);
+    opacity: 1;
+    position: relative;
+    top: 150px;
+    margin: auto;
+  }
+
+  .box-logo {
+    font-size: 10px;
+    position: absolute;
+    left: 50px;
+    width: 375px;
+    top: 310px;
+  }
+
+  .text-or {
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    top: 260px;
+  }
+
+  #urlupload {
+    font-size: 14px;
+    font-family: 'Asap';
+    position: relative;
+    top: 10px;
+    z-index: 2;
+    width: 200px;
+  }
+  
+  #fileupload {
+    font-size: 14px;
+    font-family: 'Asap';
+    position: relative;
+    top: 20px;
+    z-index: 2;
+    width: 200px;
+  }
+  
+  .button-box {
+    top: 280px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin: 0px;
+  }
+  
+  .button-back {
+    width: 300px;
+    height: 58px;
+    background: rgba(252,130,143,1);
+    opacity: 1;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: white;
+    cursor: pointer; 
+    z-index: 1;
+    margin: 0px;
+  }
+
+  .button-back1 {
+    width: 300px;
+    height: 58px;
+    background: rgba(252,130,143,1);
+    opacity: 1;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: white;
+    cursor: pointer; 
+    /* position: absolute; */
+    top: 550px;
+    margin: 0px auto;
+    z-index: 2;
+  }
+
+  .social-media {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .facebook {
+    width: 50px;
+  }
+
+  .whatsapp {
+    width: 50px;
+  }
+  .instagram {
+    width: 50px;
+  }
+  .twitter {
+    width: 50px;
+  }
+  .google {
+    width: 50px;
+  }
+  
+}
